@@ -1,0 +1,151 @@
+Operators           Description	                                        Precedence
+    ( )             parentheses	                                        highest
+    **	            exponentiation (power)	                            ↑
+    -	            negation	                                        |
+    *  /  //  %	    multiplication, division, floor division, modulus	|
+    +  -	        addition, subtraction	                            ↓
+    =	            assignment	                                        lowest
+
+    ****// always returns a float, everything else will return an integer
+
+    ****Can use operators just before "=" as a short-cut (works with all operators)
+         Ex: "x += 1" is the same as saying "x = x + 1"
+
+Comparison Operators:
+    <	less than
+    <=	less than or equal
+    >	greater than
+    >=	greater than or equal
+    ==	equal to
+    !=	not equal to    
+
+Functions:
+    print()
+    input()
+    float()
+    round()
+    abs()
+    len()
+    min()
+    max()
+    lower()
+    upper()
+    sum()
+    sorted()
+    type()
+    replace()
+    split()
+    join()
+    append()
+
+Multiple Conditions:
+    if ???:
+    elif ???:
+    else: ???
+    in(??,??,??)
+
+Vocab?
+    "" - Empty String
+    () - Empty List
+    [] - Empty Dictionary
+    {} - Empty Tuple
+    (x) - List w/ One Value
+    (x,) - Mistake
+    [x] - Dictionary w/ One Value
+    {x} - Set w/ One Element
+    {x,y} - Dictionary
+
+Lecture 2
+        Review
+    "in" - "not in"
+    "and", "or", "not"
+    "x == y" : using == between two variables will return either "TRUE" or "FALSE"
+    
+    "argument - parameter" functions use this to understand what to do
+    
+    def computeCircumference(radius):
+        print(radius)
+        return math.pi * radius * 2
+    
+    x = input("please enter a number")
+
+Lecture 3
+    def computeArea(w,l)   
+        area = w * l
+        return area, w
+    Note: ^ will create tuple (area, w)
+
+    print(computeArea(5,7)) = (area, w)
+    
+    Note: We must call the function before we can use it, like using variables
+    
+Wk03 Notes
+    textwrap - module for wrapping text
+    print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False) ~ Which of the print function's parameters has a default value? sep=, end=, file=, flush=
+    Built-in Python functions? int, float, str, range, len, sum, min, max, input, print, open
+    Math Module? pi, floor, ceil, sqrt, pow
+    Which of the following statements is the correct way to open a text file named quotes.txt for reading? with open("quotes.txt", "rt") as infile: 
+    What is the name of the file function to read all the lines of a text file into a list? readlines 
+    Which of the following statements will store a random integer between 1 and 10, including both 1 and 10 into the variable r? r = random.randint(1, 10) 
+
+Lecture 4
+    Calling Third-Party Functions
+        Pip is a standard python module that you can use to download and install third-party modules
+        
+
+    Programs
+        Programs in the programming industry tend to be very large
+        *Good practice to divide the code into smaller sections - 
+        *Makes programs easier to:
+            write
+            debug
+            understand
+        *Python can be divided into 
+            modules
+            classes
+            functions
+    
+    Student
+        age
+        i-number
+        address
+        login()
+        sendmessage()
+        setaddress()
+        fred = new student()
+    
+    modules
+        Collection of related functions
+        Python standard modules: 
+            csv, datetime, math, random, textwrap, etc...
+
+Troubleshooting Functions  
+    Two types of errors: Logic & Syntax
+    
+
+
+    #
+
+x
+    Array: Only numerical data
+    List: Any data
+    Names[x:x] - will grab list items "x" through "x" (count commas)
+    [:x] - will go up to "x"
+    Dictionary: Key/Value Pairs
+
+Lecture 7?
+    enumerate() - loops through lists, also numbers each item in a list
+    (dictionary name).get("(key name)") -> same as (dictionary name)["(key name)"]
+
+    Dictionary Functions
+        items()
+        
+Lecture 8
+    How to add item to a list within a list?
+        - Ex: elements = [[a],[],[]]
+        - to add to list item "a", do: elements[0].append("whatever wanted to add")
+
+    What is Data Analysis?
+        Inspecting, cleansing, transforming and modeling data w/ goal of discovering useful data
+    
+    Useful Panda Functions:
